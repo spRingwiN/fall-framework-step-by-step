@@ -1,0 +1,24 @@
+package com.eric.fall.helloboot.service;
+
+import com.eric.fall.annotation.Autowired;
+import com.eric.fall.annotation.Component;
+import jakarta.annotation.PostConstruct;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+@Component
+public class DbInitializer {
+
+    final Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Autowired
+    UserService userService;
+
+
+    @PostConstruct
+    void init() {
+        logger.info("init db...");
+        userService.initDb();
+    }
+
+}

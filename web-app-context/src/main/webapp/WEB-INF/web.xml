@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema" version="6.0">
+<display-name>web-app-context</display-name>
+
+    <context-param>
+        <param-name>configuration</param-name>
+        <param-value>com.eric.fall.app.webapp.WebAppConfig</param-value>
+    </context-param>
+    
+    <listener>
+        <listener-class>com.eric.fall.app.web.ContextLoaderListener</listener-class>
+    </listener>
+</web-app>

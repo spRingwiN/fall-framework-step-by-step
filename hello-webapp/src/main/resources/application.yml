@@ -1,0 +1,10 @@
+app:
+  title: Hello Application
+  version: 1.0
+
+fall:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/crm?zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=true&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: crm_test
+    password: 1syh|9t
